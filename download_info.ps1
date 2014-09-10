@@ -39,7 +39,7 @@ Function saveAllFilesFromHttpDir($dir,$save_dir,$client)
 			-OR $line -like "*.htm*" `
 			-OR $line -like "*.xml*")
 		{
-			$client.DownloadFile($dir,$save_dir+$link)
+			$client.DownloadFile($dir+$link,$save_dir+$link)
 		}
 	}
 }
